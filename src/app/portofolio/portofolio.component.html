@@ -1,0 +1,50 @@
+<section>
+    <header class="text-center pt-3">
+        <h1 class="mt-5 pt-5 text-navyblue text-uppercase fs-1 fw-bolder text-center">Portofolio Component</h1>
+        <div class="Star text-navyblue"><i class="fa-solid fa-star"></i></div>
+    </header>
+
+    <div
+     class="container position-relative">
+        <div class="row items">
+            @for(Item of Items;track $index){
+
+                <div class="item  col-sm-12 col-md-6 col-lg-4 p-4">
+                    <div class="inner  position-relative">
+
+                   <img [src]="Item"  class="w-100 rounded-3" alt="Portofolio's Image">
+                        <div (click)="flag=false;ImageSrc=Item" class="Layer bg-success d-flex justify-content-center align-items-center text-light display-3">
+                            <i class="fa-solid fa-plus fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+
+
+        <div [class.d-none]="flag" 
+        (click)="Hide($event.target,img)"
+        class="BigLayer bg-primary d-flex flex-wrap justify-content-center align-items-center bg-opacity-50">
+
+            <div class="Show w-50 position-relative">
+                <i (click)="flag=true" class="fa-solid fa-xmark fa-xl position-absolute end-0 p-3"></i>
+                <i class="fa-sharp fa-solid fa-arrow-left fa-xl  position-absolute start-0 top-50 p-3"></i>
+                <i  class="fa-sharp fa-solid fa-arrow-right fa-xl  position-absolute end-0 top-50 p-3"></i>
+                <img #img [src]="ImageSrc" class="w-100 rounded-end-3" alt="Portofolio's Image">
+            </div>
+            
+
+
+         
+             </div>
+        </div>
+
+
+
+        
+     
+    </section>
+
+

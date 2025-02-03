@@ -1,0 +1,51 @@
+.Layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.inner:hover .Layer{
+    opacity: 1;
+}
+.Star::after {
+    content: "";
+    display: inline-block;
+    width: 80px; 
+    height: 4px; 
+    background-color: #2C3E50; 
+    margin-left: 15px; 
+    vertical-align: middle;
+}
+
+.Star::before {
+    content: "";
+    display: inline-block;
+    width: 80px; 
+    height: 4px; 
+    background-color: #2C3E50; 
+    margin-right: 15px; 
+    vertical-align: middle;
+}
+
+.BigLayer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+}
+.Show img{
+    z-index: 999999;
+}
+.text-navyblue{
+    color: #2C3E50;
+}

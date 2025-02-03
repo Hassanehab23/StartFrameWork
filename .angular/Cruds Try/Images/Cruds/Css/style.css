@@ -1,0 +1,30 @@
+.second{
+    opacity: 0.3;
+
+}
+
+
+.active{
+    opacity: 1;
+}
+
+.cap{
+    width: 80%;
+    left: 10%;
+    bottom: 15px;
+}
+.lolo{
+    background-color: rgba(0,0,0,0.3);
+}
+.loloitem{
+    width: 70%;
+    height: 70vh;
+    background-image: url(../5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+i{
+    font-size: 24px;
+    color: white;
+    padding:20px ;
+}

@@ -1,0 +1,29 @@
+.form-control:focus{
+    box-shadow: none;
+}
+.Star::after {
+    content: "";
+    display: inline-block;
+    width: 80px; 
+    height: 4px; 
+    background-color: #2C3E50; 
+    margin-left: 15px; 
+    vertical-align: middle;
+}
+
+.Star::before {
+    content: "";
+    display: inline-block;
+    width: 80px; 
+    height: 4px; 
+    background-color: #2C3E50; 
+    margin-right: 15px; 
+    vertical-align: middle;
+}
+.text-navyblue{
+    color: #2C3E50;
+}
+.bg-specific{
+    background-color: #20c997;
+}
+

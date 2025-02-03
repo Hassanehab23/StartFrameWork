@@ -1,0 +1,13 @@
+.bg-navyblue{
+background-color: #2C3E50;
+}
+.bg-navy{
+    background-color: #212529;
+}
+.Circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: wheat;
+    border: white 2px solid;
+}

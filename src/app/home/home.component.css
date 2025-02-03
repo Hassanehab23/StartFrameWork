@@ -1,0 +1,25 @@
+.Star::after {
+    content: "";
+    display: inline-block;
+    width: 80px; 
+    height: 4px; 
+    background-color: white; 
+    margin-left: 15px; 
+    vertical-align: middle;
+}
+
+.Star::before {
+    content: "";
+    display: inline-block;
+    width: 80px; 
+    height: 4px; 
+    background-color: white; 
+    margin-right: 15px; 
+    vertical-align: middle;
+}
+/* .text-navyblue{
+    color: #2C3E50;
+} */
+.bg-specific{
+    background-color: #1ABC9C;
+}
