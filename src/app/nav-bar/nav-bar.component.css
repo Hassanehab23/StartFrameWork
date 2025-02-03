@@ -4,3 +4,34 @@
 .bg-specific{
     background-color: #20c997;
 }
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; 
+      align-items: flex-start; 
+      position: static;
+      z-index: -1;
+    }
+  
+    .navbar .nav-links {
+      display: none; 
+      flex-direction: column; 
+      width: 100%;
+    }
+  
+    .navbar .nav-links.active {
+      display: flex; 
+    }
+  
+    .navbar .menu-icon {
+      display: block; 
+      cursor: pointer;
+    }
+  
+    .navbar .menu-icon .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+  }
+
